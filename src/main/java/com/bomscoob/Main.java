@@ -23,22 +23,15 @@ public class Main {
             scanner.nextLine();
 
             System.out.printf("Which operation for %d?", current);
-            System.out.print("[ +, -, *, / ] : ");
+            System.out.print("[ + (add), - (subtract), * (multiply), / (divider), %(mod) ] : ");
             String op = scanner.nextLine();
 
             switch (op) {
-                case "+" -> {
-                    sum = operations.plus(sum, current);
-                }
-                case "-" -> {
-                    sum = operations.subtract(sum, current);
-                }
-                case "*" -> {
-                    sum = operations.times(sum, current);
-                }
-                case "/" -> {
-                    sum = operations.divider(sum, current);
-                }
+                case "+" -> sum = operations.add(sum, current);
+                case "-" -> sum = operations.subtract(sum, current);
+                case "*" -> sum = operations.multiply(sum, current);
+                case "/" -> sum = operations.divider(sum, current);
+                case "%" -> sum = operations.mod(sum, current);
                 default -> {
                     throw new IllegalArgumentException("No operation match.");
                 }

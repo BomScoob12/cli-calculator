@@ -1,10 +1,10 @@
 package com.bomscoob.utils.impl;
 
-import com.bomscoob.utils.interfaces.ICalculatorOperations;
+import com.bomscoob.utils.ICalculatorOperations;
 
 public class CalculatorOperations implements ICalculatorOperations {
     @Override
-    public int plus(int num1, int num2) {
+    public int add(int num1, int num2) {
         return num1+num2;
     }
     @Override
@@ -12,7 +12,7 @@ public class CalculatorOperations implements ICalculatorOperations {
         return num1-num2;
     }
     @Override
-    public int times(int num1, int num2) {
+    public int multiply(int num1, int num2) {
         return num1*num2;
     }
     @Override
