@@ -1,5 +1,6 @@
 package com.bomscoob;
 
+import com.bomscoob.utils.ICalculatorOperations;
 import com.bomscoob.utils.impl.CalculatorOperations;
 
 import java.util.Scanner;
@@ -7,7 +8,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        CalculatorOperations operations = new CalculatorOperations();
+        ICalculatorOperations operations = new CalculatorOperations();
         System.out.println("How many number do you need to calculator? ");
         int n = scanner.nextInt();
         int sum = 0;
