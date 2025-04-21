@@ -33,9 +33,7 @@ public class Main {
                 case "*" -> sum = operations.multiply(sum, current);
                 case "/" -> sum = operations.divider(sum, current);
                 case "%" -> sum = operations.mod(sum, current);
-                default -> {
-                    throw new IllegalArgumentException("No operation match.");
-                }
+                default -> throw new IllegalArgumentException("No operation match.");
             }
 
             System.out.printf("sum is %d\n", sum);
